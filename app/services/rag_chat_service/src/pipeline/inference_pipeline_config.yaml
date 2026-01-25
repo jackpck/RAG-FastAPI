@@ -1,0 +1,61 @@
+pipeline:
+  - name: retrieving
+    class: app.services.rag_chat_service.src.components.retriever.PostgresRetriever
+    method: retrieve
+    params:
+      tablename: "faiss_index_google_genai_risk_mgmt"
+      embedding_model_name: "all-MiniLM-L6-v2"
+    input:
+      query:
+      k_retrieval: 20
+    output: retrieved_docs
+
+  - name: reranking
+    class: app.services.rag_chat_service.src.components.reranker.Reranker
+    method: rerank
+    params:
+      k_rerank: 5 # choose top k reranker score
+      model_rerank: "gemini-2.5-flash"
+      model_rerank_provider: "google_genai"
+      temperature_rerank: 0
+      top_k_rerank: 5 # top k token in generation of the rerank score
+      top_p_rerank: 0.8
+      prompt_name: "system-reranker-prompt"
+      prompt_version: "latest"
+    input:
+      query:
+      retrieved_docs: retrieved_docs
+    output: reranked_document
+
+  - name: autorating
+    class: app.services.rag_chat_service.src.components.autorater.Autorater
+    method: autorate
+    params:
+      model_autorate: "gemini-2.5-flash"
+      model_autorate_provider: "google_genai"
+      temperature_autorate: 0
+      top_k_autorate: 5
+      top_p_autorate: 0.8
+      prompt_name: "system-autorater-prompt"
+      prompt_version: "latest"
+    input:
+      reranked_document: reranked_document
+      query:
+    output: context
+
+  - name: generating
+    class: app.services.rag_chat_service.src.components.generator.GeneratorLLM
+    method: generate
+    params:
+      model: "gemini-2.5-flash"
+      model_provider: "google_genai"
+      temperature: 0
+      top_k: 5 # top k token in generation of the rerank score
+      top_p: 0.9
+      prompt_name: "system-system-prompt"
+      prompt_version: "latest"
+    input:
+      context: context
+      question:
+    output:
+
