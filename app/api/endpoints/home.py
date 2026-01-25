@@ -20,4 +20,7 @@ def app_introduction():
 
 @router.get("/home/{input}")
 def read_input(input: str):
+    """
+    dummy endpoint. Not used in the RAG
+    """
     return {"input": input}
