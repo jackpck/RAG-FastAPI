@@ -16,3 +16,16 @@ class ChainRunner:
         return response
 
 
+if __name__ == "__main__":
+    from dotenv import load_dotenv
+    from langsmith import Client
+    import asyncio
+    from app.services.rag_chat_service.src.bootstrap import initialize_resources
+
+    load_dotenv()
+    client = Client()
+    asyncio.run(initialize_resources())
+
+    runner = ChainRunner(config_path="app/services/rag_chat_service/src/pipeline/inference_pipeline_config.yaml")
+    response = runner.run("How to mitigate risks in GenAI?")
+    print(response)

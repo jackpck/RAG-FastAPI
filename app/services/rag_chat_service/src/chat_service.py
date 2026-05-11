@@ -27,6 +27,12 @@ class ChatService(BaseService):
 
 
 if __name__ == "__main__":
+    from langsmith import Client
+    from app.services.rag_chat_service.src.bootstrap import initialize_resources
+    import asyncio
+
+    client = Client()
+    asyncio.run(initialize_resources())
 
     user_query = "What are the top risks in GenAI?"
 

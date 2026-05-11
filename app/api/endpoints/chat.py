@@ -24,12 +24,12 @@ logger = logging.getLogger(__name__)
 
 @router.post("/chat")
 def rag_chat(request: ChatRequest):
+    datetime_str = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     try:
         logger.info("Load ChatService")
         chat_service = ChatService()
         response = chat_service.run_RAG(request.message)
 
-        datetime_str = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         neon_db = bootstrap.get_resource("db")
         logger.info("Save user message and chatbot response")
         neon_db.insert_feedback_to_table(tablename=FEEDBACK_TABLENAME,

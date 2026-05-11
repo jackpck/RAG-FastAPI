@@ -39,5 +39,11 @@ def get_resource(name: str):
         raise KeyError(f"{name} is not found. Available resources: {list(_resources.keys())}")
     return _resources[name]
 
+if __name__ == "__main__":
+    import asyncio
+    asyncio.run(initialize_resources())
+
+    print(get_resource("db"))
+    print(get_resource("prompt_loader"))
 
 

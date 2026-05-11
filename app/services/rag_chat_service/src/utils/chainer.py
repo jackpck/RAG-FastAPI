@@ -1,7 +1,6 @@
 import yaml
 import importlib
 from langchain_core.runnables import RunnableLambda, RunnableSequence
-from langsmith import Client
 
 def chain_from_yaml(config_path: str):
     with open(config_path, "r") as f:
@@ -67,14 +66,8 @@ def chain_from_yaml(config_path: str):
 
 
 if __name__ == "__main__":
-    import os
-    os.environ["GOOGLE_API_KEY"] = os.environ["GOOGLE_API_KEY"].rstrip()
-    os.environ["LANGSMITH_API_KEY"] = os.environ["LANGSMITH_API_KEY"].rstrip()
-    os.environ["LANGSMITH_WORKSPACE_ID"] = os.environ["LANGSMITH_WORKSPACE_ID"].rstrip()
-    os.environ["LANGSMITH_ENDPOINT"] = os.environ["LANGSMITH_ENDPOINT"].rstrip()
-    os.environ["LANGSMITH_PROJECT"] = os.environ["LANGSMITH_PROJECT"].rstrip()
-    os.environ["LANGSMITH_TRACING"] = os.environ["LANGSMITH_TRACING"].rstrip()
-    os.environ["LANGCHAIN_CALLBACKS_BACKGROUND"] = os.environ["LANGCHAIN_CALLBACKS_BACKGROUND"].rstrip()
+    from langsmith import Client
+
     config_path = "./configs/pipeline_config.yaml"
     user_query_path = "./src/user_query/user_query.txt"
 

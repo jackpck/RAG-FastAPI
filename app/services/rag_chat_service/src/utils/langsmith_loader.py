@@ -44,15 +44,21 @@ def load_data(data_name: str,
 
 if __name__ == "__main__":
 
-    EVAL_DATA_PATH = "./data/evaluation/eval_examples.json"
-    data_name = "rag_test"
+    #EVAL_DATA_PATH = "./data/evaluation/eval_examples.json"
+    #data_name = "rag_test"
 
-    with open(EVAL_DATA_PATH, "r", encoding="utf-8") as f:
-        data = f.read()
-    examples = json.loads(data)["examples"]
+    #with open(EVAL_DATA_PATH, "r", encoding="utf-8") as f:
+    #    data = f.read()
+    #examples = json.loads(data)["examples"]
 
-    dataset = load_data(data_name=data_name,
-                        examples=examples)
+    #dataset = load_data(data_name=data_name,
+    #                    examples=examples)
 
-    print(dataset)
+    #print(dataset)
+
+    prompt_name = "system-autorater-prompt"
+    prompt_version = "latest"
+    prompt = load_prompt(prompt_name=prompt_name,
+                         prompt_version=prompt_version)
+    print(prompt)
 
