@@ -1,0 +1,980 @@
+{
+  "nodes": [
+    {
+      "id": "cda831f1-6e58-4185-ba72-cd2d40419798",
+      "properties": {
+        "page_content": "Historically, regulators and the financial services industry have developed various model risk management frameworks to address the potential risks that arise from the use of models in decision-making. These principles-based frameworks typically provide for model validation (rigorous assessment of a model's accuracy, reliability, and limitations), governance and control (roles and responsibilities for model development, implementation, and monitoring), and risk mitigation (identifying and managing potential risks, such as model bias, data quality issues, and misuse). This paper advocates for the continued reliance on these well-established model risk management frameworks to address the emerging challenges posed by generative AI. Developed jointly by the Alliance for Innovative Regulation and Google Cloud, this paper builds on our earlier joint publication, ‘Applying Model Risk Management Guidance to Artificial Intelligence/Machine Learning Based Risk Models.’3 In this paper, we expand on that foundation by exploring how model risk management frameworks and established governance practices can be applied to manage risks in generative AI contexts.",
+        "entities": [
+          "regulators",
+          "financial services industry",
+          "model risk management frameworks",
+          "model validation",
+          "governance and control",
+          "risk mitigation",
+          "model bias",
+          "data quality issues",
+          "generative ai",
+          "alliance for innovative regulation"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "be018c88-065b-41ab-97f8-70a2c474c628",
+      "properties": {
+        "page_content": "Specifically, the paper proposes that regulators acknowledge best practices, provide enhanced regulatory clarity, and establish expectations in the following four areas: (A) model governance and controls; (B) model development, implementation and use; (C) model validation and oversight; and (D) shared responsibility in third-party risk management. We highlight three key topics where additional regulatory clarity can benefit all stakeholders: 1. Documentation Requirements – We recommend updating and clarifying model risk management guidance to specify documentation expectations for generative AI models. 2.",
+        "entities": [
+          "regulators",
+          "best practices",
+          "model governance",
+          "model development",
+          "model validation",
+          "third-party risk management",
+          "documentation requirements",
+          "generative ai models"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "653d9d14-34fb-4589-acff-bec6bebe36d5",
+      "properties": {
+        "page_content": "Model Evaluation and Grounding – We recommend that regulators take into account developers’ use of practices such as grounding and outcome-based model evaluations, in addition to model explainability and transparency, in establishing the safety and soundness of generative AI-based models. 3. Controls for Safe and Sound AI Implementation – We recommend that regulators recognize a set of controls, including continuous monitoring, robust testing protocols, and human-in-the-loop oversight, that are appropriate for ensuring the responsible deployment of generative AI in financial services. Responsible adoption of generative AI in financial services requires a collaborative approach among industry participants, regulatory bodies, and technology providers.",
+        "entities": [
+          "generative ai",
+          "financial services",
+          "regulators",
+          "developers",
+          "model evaluations",
+          "model explainability",
+          "transparency",
+          "controls",
+          "monitoring",
+          "oversight"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "e6630d84-081b-4837-8d4f-d72975492c31",
+      "properties": {
+        "page_content": "With tailored application of model risk management frameworks and enhanced regulatory certainty, financial institutions can responsibly adopt technological advancements in a manner that aligns with regulatory expectations, while upholding high standards of compliance, accountability, ethics, and transparency. 1 Google Cloud (2024) The ROI of generative AI in financial services. Available at: https://inthecloud.withgoogle.com/gen-ai-index-finance/dl-cd.html (Accessed: September 12, 2024). 2 Chui, M. et al.",
+        "entities": [
+          "google cloud",
+          "2024",
+          "september 12, 2024"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "df742f1c-f3b4-4f9a-a3df-9c348e2483a9",
+      "properties": {
+        "page_content": "(2023) The economic potential of generative AI, McKinsey & Company. Available at: https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier (Accessed: September 16, 2024). 3 Google Cloud and Alliance for Innovative Regulation (Alliance for Innovative Regulation) (2023) Applying model risk management guidance to artificial intelligence/machine learning based risk models. Available at: 3 https://services.google.com/fh/files/misc/wp_applying_existing_ai_ml_model_risk_management_guidance.pdf.",
+        "entities": [
+          "mckinsey & company",
+          "google cloud",
+          "alliance for innovative regulation",
+          "artificial intelligence",
+          "machine learning"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "e41cab59-b7b7-4f26-9357-ec525d761fec",
+      "properties": {
+        "page_content": "Introduction In the United States, a broad set of financial laws and regulations govern activities that may involve AI technologies, including generative AI.9 These Generative AI has the potential to contribute comprehensive requirements help to safeguard significantly to the economy, with estimates consumers and market participants, and have suggesting a potential addition of up to $340 billion proven durable in addressing evolving technologies annually to the banking sector alone.4 Multinational over decades. In order to further mitigate the risk corporations across many industries, including associated with such evolving technologies, financial institutions, are exploring or already taking regulators have promulgated financial regulatory advantage of generative AI-based models. guidance and standards, such as the 'Supervisory Guidance on Model Risk Management'10 (SR 11-7). Governments also recognize the strategic SR 11-7, issued by the U.S. Federal Banking Agencies, importance of AI, prioritizing partnerships with the was updated by the Office of the Comptroller of private sector to foster innovation, and ensuring the Currency in 2021 to expressly reference AI.",
+        "entities": [
+          "united states",
+          "ai",
+          "generative ai",
+          "banking sector",
+          "financial institutions",
+          "u.s. federal banking agencies",
+          "office of the comptroller of currency",
+          "2021"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "9b14b530-c5fb-4f12-8056-c03714fef459",
+      "properties": {
+        "page_content": "that proper regulatory frameworks are in place to These frameworks provide a structured approach manage risks. Importantly, many financial regulatory to assessing and mitigating risks associated with bodies and supervisory authorities around the world advanced AI models. are actively exploring how to oversee financial institutions that are using advanced AI technologies.5 In the first section of this paper, we provide a For instance, the Financial Stability Board (FSB), the lay of the land for generative AI, delving into how international body that monitors and assesses generative AI works and differs from traditional AI, vulnerabilities affecting the global financial system, its key benefits and associated risks. This provides a advises that many of the risks posed by AI are foundation for Section II, which provides a discussion familiar to financial regulators.",
+        "entities": [
+          "financial stability board",
+          "fsb",
+          "ai",
+          "financial institutions",
+          "financial regulators"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "ffb6f1b6-08d7-4dd9-b72f-fbf5e2205958",
+      "properties": {
+        "page_content": "The FSB Standing on applying model risk management frameworks to Committee Chair recently highlighted that principles mitigate generative AI risks, focusing on effective of model risk management, including managing data governance; model development, implementation, quality, design, and governance, provide a robust and use; model validation; and third party risk framework for assessing and mitigating risks.6 management. Likewise, the Monetary Authority of Singapore has set specific guidelines to ensure the safe In applying model risk management frameworks and responsible deployment of generative AI technologies within its financial sector.7 Further, the to generative AI, the paper argues that generative AI models are not inherently high-risk just by virtue of European Banking Authority has issued a report on the technology involved; instead, the risk they pose machine learning (ML) for internal ratings-based should be assessed based on the specific use-case models, offering recommendations for regulatory compliance of ML techniques.8 or application at issue and the unique characteristic of such models that are implicated based on the use-case or application. Further, the paper argues These initiatives underscore a global commitment that clear governance frameworks that define roles, to ensuring that AI technologies are managed with responsibilities, and accountability will be essential appropriate safeguards, highlighting the need for the for effective oversight of generative AI. application of model risk management frameworks to adapt to rapid technological advancements.",
+        "entities": [
+          "fsb",
+          "committee chair",
+          "monetary authority of singapore",
+          "european banking authority",
+          "generative ai",
+          "machine learning",
+          "financial sector"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "19b6cd86-3d61-45db-b823-af14819a260e",
+      "properties": {
+        "page_content": "4 Chui, M. et al., 2023. 5 McCaul, E. (2024) From data to decisions: AI and supervision. Revue Banque, 26 February. Available at: https://www.bankingsupervision.europa.eu/press/interviews/date/2024/html/ssm.in240226~c6f7fc9251.en.html (Accessed: September 12, 2024).",
+        "entities": [
+          "chui, m.",
+          "mccaul, e.",
+          "ai",
+          "revue banque",
+          "february 26",
+          "september 12, 2024",
+          "https://www.bankingsupervision.europa.eu"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "801e188b-f3a5-4904-9e99-844f8df93ae3",
+      "properties": {
+        "page_content": "6 Liang, N. (2024) Remarks by Nellie Liang, US Under Secretary for Domestic Finance, and Chair of the Financial Stability Board Standing Committee on Assessment of Vulnerabilities, at the OECD – FSB Roundtable on Artificial Intelligence in Finance, Paris, 22 May. Available at: https://www.fsb.org/2024/06/remarks-by-nellie-liang-on-artificial-intelligence-in-finance/ (Accessed:September 12, 2024). 7 Monetary Authority of Singapore (MAS) (2023) Emerging Risks and Opportunities of Generative AI for Banks: A Singapore Perspective. Available at: https://www.mas.gov.sg/-/media/mas/news/media-releases/2023/executive-summary---emerging-risks-and-opportunities-of-generative-ai-for-banks.pdf.",
+        "entities": [
+          "nellie liang",
+          "us under secretary for domestic finance",
+          "financial stability board",
+          "oecd",
+          "fsb",
+          "artificial intelligence in finance",
+          "paris",
+          "monetary authority of singapore",
+          "mas",
+          "generative ai"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "4c955995-b3f0-4c30-bfc1-528fa8f84bc2",
+      "properties": {
+        "page_content": "8 European Banking Authority (EBA) (2023) Follow-up Report from the Consultation on the Discussion Paper on Machine Learning for IRB Models, EBA/REP/2023/28, August. Available at: https://www.eba.europa.eu/sites/default/files/document_library/Publications/Reports/2023/1061483/Follow-up%20report%20on%20machine%20learning%20for%20IRB%20models.pdf (Accessed: September 12, 2024). 9 SIFMA & SIFMA Asset Management Group (2024) Promoting Investor Success, Industry Innovation, and Efficiency with AI, SIFMA. Available at: https://www.sifma.org/wp-content/uploads/2024/09/AI-Whitepaper-Promoting-Investor-Success-Industry-Innovation-and-Efficiency-with-AI.pdf (Accessed: October 1, 2024).",
+        "entities": [
+          "european banking authority",
+          "eba",
+          "sifma",
+          "sifma asset management group",
+          "ai"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "536129e2-a710-4c59-8491-09c46ffd944e",
+      "properties": {
+        "page_content": "10 Office of the Comptroller of the Currency (OCC) (2021) Model risk management: New Comptroller’s Handbook Booklet, Office of the Comptroller of the Currency (OCC). Available at: 4 https://occ.gov/news-issuances/bulletins/2021/bulletin-2021-39.html. To this end, there is an opportunity for regulators to domain-specific data and significant customization. clarify documentation and ongoing testing and Generative AI on the other hand, leverages monitoring responsibilities, especially in the context pre-trained large models which create outputs of financial institutions partnering with third-party that are probabilistic, offering a range of possible model developers.",
+        "entities": [
+          "office of the comptroller of the currency",
+          "occ",
+          "generative ai",
+          "financial institutions"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "6b8d37e7-6678-4f6c-b097-ce840eda68a9",
+      "properties": {
+        "page_content": "By applying and adapting model outcomes based on the learned patterns and the risk management frameworks to generative AI, all input provided.13 involved stakeholders can promote the responsible adoption of generative AI in financial services. Definitions Used in This Paper14 I. Understanding Generative AI AI system: Is a machine-based system that, for explicit or implicit objectives, infers, from the input it receives, how to generate outputs such A. How Generative AI Works & Differences from as predictions, content, recommendations, or “Traditional AI” decisions that can influence physical or virtual environments.",
+        "entities": [
+          "generative ai",
+          "financial services",
+          "ai system",
+          "traditional ai"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "46c4a1b2-0513-45dc-96bb-139c24201e0c",
+      "properties": {
+        "page_content": "Different AI systems vary in their Generative AI is a subset of AI that uses pattern levels of autonomy and adaptiveness after recognition and contextual and memory capabilities deployment. to generate new content. Generative AI models create new outputs from sample information in a AI models: Are a set of instructions or rules that dataset, or could determine the probability that new enable machines to learn, analyze data and make samples or inputs are from a given dataset.11 Large decisions based on that knowledge. language models (LLMs), a subset of foundation models that process and generate text, are trained Foundation model: A machine learning model on vast datasets to predict and generate language that is trained on broad data at scale, is designed through probabilistic assessments of variables like for generality of output, and can be adapted to the next word or phrase.12 a wide range of downstream distinctive tasks or applications, including simple task completion, Beyond LLMs, generative AI can also be natural language understanding, translation, or multimodal, meaning it can interpret and combine content generation.",
+        "entities": [
+          "generative ai",
+          "ai",
+          "llms",
+          "foundation models",
+          "machine learning",
+          "natural language understanding",
+          "translation"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "3bb6b047-391f-4164-b9f1-3cc7de0cd5f2",
+      "properties": {
+        "page_content": "different information formats including images, music, audio, and video, further enhancing its Large Language Model (LLMs): As a subset of versatility and adaptability across various foundation models, large language models (LLMs), applications and use cases. These models excel are models that can help computers analyze, at identifying complex patterns across different understand and respond to human inputs using mediums, using pattern recognition to generate speech and written text. new outputs based on the inputs they receive, and simulating agent-like behavior. This shift to B.",
+        "entities": [
+          "large language model",
+          "llms",
+          "foundation models",
+          "applications",
+          "use cases",
+          "pattern recognition"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "45856dad-5f6f-4db2-a3ba-ef96b881d9d2",
+      "properties": {
+        "page_content": "Benefits of Generative AI generative AI marks a notable evolution in AI technology, enabling new forms of In the financial services sector, generative AI human-technology interaction. can transform operations by enhancing efficiency, supporting decision-making support,15 augmenting Unlike “traditional” AI, which primarily analyzes intelligence, and improving compliance through and interprets existing data to make decisions or applications in areas such as fraud detection, predictions, generative AI ventures into the realm of risk management, and the automation of manual creation. “Traditional” or “predictive” AI is typically processes.16 deterministic, requiring detailed, topic or 11 Google for Developers (n.d.) Machine learning glossary. Updated 2024.",
+        "entities": [
+          "generative ai",
+          "ai technology",
+          "financial services",
+          "human-technology interaction",
+          "efficiency",
+          "decision-making",
+          "fraud detection",
+          "risk management",
+          "automation"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "9e7664c1-dd29-4a7b-8b7e-da44b24b5f2c",
+      "properties": {
+        "page_content": "Available at: https://developers.google.com/machine-learning/glossary (Accessed: September 17, 2024). 12 Zewe, A. (2023) Explained: Generative AI, MIT News | Massachusetts Institute of Technology. Available at: https://news.mit.edu/2023/explained-generative-ai-1109 (Accessed: May 30, 2024).",
+        "entities": [
+          "google",
+          "generative ai",
+          "mit news",
+          "massachusetts institute of technology"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "88c5f0f0-fdc8-4dca-ba53-b5668a252eef",
+      "properties": {
+        "page_content": "13. Vassilev, A. et al. (2024) Adversarial machine learning: A taxonomy and terminology of attacks and mitigations. Gaithersburg, MD: National Institute of Standards and Technology (NIST).",
+        "entities": [
+          "vassilev",
+          "adversarial machine learning",
+          "gaithersburg",
+          "md",
+          "national institute of standards and technology",
+          "nist"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "831849fe-76d0-4ab9-bc86-6d04b7b20447",
+      "properties": {
+        "page_content": "doi: 10.6028/nist.ai.100-2e2023. 14 See Asia Cloud Computing Association (2024) AI Handbook, Asia Cloud Computing Association. Available at: https://asiacloudcomputing.org/wp-content/uploads/2024/09/2024-09-13-ACCA-AI-Handbook-Final.pdf (Accessed: October 7, 2024). 15 Sekhar, S. G. A.",
+        "entities": [
+          "asia cloud computing association",
+          "ai handbook",
+          "asia cloud computing association",
+          "https://asiacloudcomputing.org/wp-content/uploads/2024/09/2024-09-13-acca-ai-handbook-final.pdf",
+          "october 7, 2024",
+          "sekhar, s. g. a."
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "873486da-0a5f-4f8a-a55f-bf1e0fac2f4d",
+      "properties": {
+        "page_content": "(2023) How can financial services firms derive value from Generative AI?, EY. MIT OpenCourseWare. Available at: https://www.ey.com/en_us/financial-services/is-financial-services-ready-for-generative-ai (Accessed: May 30, 2024). 16 Hall, B.",
+        "entities": [
+          "generative ai",
+          "ey",
+          "mit opencourseware",
+          "financial services"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "524d008a-8a3e-4020-a1dc-8840caa5c49a",
+      "properties": {
+        "page_content": "(2024) 101 real-world generative AI use cases from the world’s leading organizations, Google Cloud Blog. Google Cloud, 12 April. Available at: 5 https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders. ● Enhanced Operational Efficiency and ● Increased Individual Productivity: Generative Automation: Generative AI can automate AI can improve employee productivity across a repetitive tasks such as responding to requests number of functions by: amplifying creativity for for proposals, localizing multilingual content, and marketers, speeding up information finding for conducting compliance checks.",
+        "entities": [
+          "google cloud",
+          "april",
+          "generative ai"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "b2343518-96d9-436d-bf73-fea16e549bbe",
+      "properties": {
+        "page_content": "This automation customer service agents, accelerating coding can reduce manual errors and frees up resources for developers, providing helpful summaries for higher-value initiatives, such as strategic from internal knowledge repositories such planning and innovation. In some instances, AI as HR, and providing assistance in email and systems are used to streamline the development calendar applications as well as spreadsheets, of security and compliance features, improving presentations, documents, and others. These both speed and accuracy in product development tools enable employees to focus on higher-value and operations. activities while reducing time spent on manual processes, ultimately increasing efficiency and ● Advanced Data Management and Insights: driving innovation.",
+        "entities": [
+          "ai",
+          "hr",
+          "advanced data management",
+          "insights"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "778beb47-a590-4e46-a6ef-0bb4b86f4809",
+      "properties": {
+        "page_content": "Generative AI can help handle complex, unstructured data, enabling firms to extract C. Risks Associated with Generative AI valuable insights through advanced conversational interfaces and data summarization While generative AI applications offer significant techniques. This capability supports informed potential benefits, the technology also has unique decision-making and strategic planning. This helps characteristics and risks that should be assessed financial institutions analyze large datasets and mitigated. The risks associated with generative AI quickly, uncover hidden patterns, and make fall into two primary areas: inherent risks and external informed decisions in real time.",
+        "entities": [
+          "generative ai",
+          "c. risks associated with generative ai",
+          "financial institutions"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "78093eb7-ec70-43fd-87a5-52dd92260af7",
+      "properties": {
+        "page_content": "These capabilities risks. Inherent risks stem directly from the are particularly valuable in risk management and technology itself, such as unintended bias that can strategic forecasting, where timely and accurate skew model decision-making outcomes and the data analysis can provide a competitive edge. overall complexity of generative AI systems that ● Enhanced Customer Engagement: Generative AI may affect model transparency. External risks arise can transform customer interactions through from the broader application of generative AI within advanced chatbots and enhanced search the financial ecosystem, encompassing data security functionalities, providing personalized, efficient challenges, regulatory compliance issues, and the customer interactions, and setting new complexities involved in integrating new technologies benchmarks for customer satisfaction.",
+        "entities": [
+          "generative ai",
+          "risk management",
+          "technology",
+          "strategic forecasting",
+          "data analysis",
+          "customer engagement",
+          "chatbots",
+          "financial ecosystem",
+          "data security",
+          "regulatory compliance"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "3ff3ca0d-c7c2-4f83-a8f7-bcf025a17903",
+      "properties": {
+        "page_content": "into existing infrastructures. ● Improved Security Operations: Generative AI can enhance security operations by In terms of intrinsic risks, the following are contextualizing the latest threats and support particularly relevant: staff in detecting, investigating, and responding to cyber threats to ensure constant threat ● Hallucinations: Hallucinations in generative AI oversight. It prioritizes critical threats, automates models occur when models generate outputs routine tasks, and improves threat detection and that appear coherent but are factually incorrect vulnerability management. This enables analysts or nonsensical.",
+        "entities": []
+      },
+      "type": ""
+    },
+    {
+      "id": "68add78a-070a-47a6-a616-ef5757b44355",
+      "properties": {
+        "page_content": "These can be caused by data to focus on significant issues, reduces burnout, quality issues, or the complex learning and shifts security operations from reactive to architecture of these models. Unlike bias, proactive, ultimately improving overall security which reflects skewed or unfair outcomes, efficiency. hallucinations involve the model producing incorrect or misleading information, potentially damaging decision-making processes within financial institutions. 6",
+        "entities": []
+      },
+      "type": ""
+    },
+    {
+      "id": "3a7b9183-af83-4b1a-9f69-589e66fb84f5",
+      "properties": {
+        "page_content": "● Amplification of Bias: Generative AI systems can unintentionally amplify harmful biases in the data they are trained on, leading to skewed outcomes which can be unfair in certain settings. These biases can disproportionately affect certain demographic groups or customer segments, potentially resulting in unfair decisions or outcomes. ● Explainability: Generative AI systems are inherently complex and often lack transparency in how they arrive at decisions or outputs. This aspect may make it difficult for stakeholders—both technical and non-technical—to fully understand the rationale behind the AI's behavior, which can challenge efforts to ensure regulatory compliance, maintain public trust, and establish accountability within financial institutions.",
+        "entities": [
+          "generative ai",
+          "amplification of bias",
+          "demographic groups",
+          "customer segments",
+          "stakeholders",
+          "financial institutions"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "7be0611a-ec17-4687-ae2b-11a20d211264",
+      "properties": {
+        "page_content": "In terms of external risks, some of the key concerns raised by financial institutions with respect to Generative AI pertain to data security and global regulatory uncertainty. ● Data Security: Typically these concerns are focused on ensuring that confidential or proprietary data is safeguarded from unwarranted access or potential exposure – for example, to avoid training data being provided verbatim in response to users’ prompts, or queries, or to avoid manipulation of prompts to trick the generative AI model into revealing sensitive data. Yet other risks exist, such as model poisoning, where the training data set is corrupted with mislabeled or misleading information that can lead the large language model to learn incorrect patterns and produce inaccurate results. Robust data security and integrity measures are needed to safeguard against these kinds of risks.",
+        "entities": [
+          "generative ai",
+          "data security",
+          "global regulatory uncertainty",
+          "model poisoning",
+          "large language model"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "e602198c-ae69-4a5a-b865-931ac209cdd5",
+      "properties": {
+        "page_content": "● Regulatory Uncertainty: Financial institutions face a rapidly evolving regulatory landscape when integrating generative AI. The complexity of analyzing, reconciling, and interpreting regulatory attitudes and requirements can strain resources, impacting the ability of institutions to adapt swiftly and focus resources on model risk management. These risks underline a deep need in the industry for regulatory clarity. 7",
+        "entities": [
+          "financial institutions",
+          "generative ai",
+          "regulatory landscape",
+          "model risk management",
+          "regulatory clarity"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "e8976839-5b8e-4a0f-9774-464ace7aab16",
+      "properties": {
+        "page_content": "II. Adapting Model Risk Management practices may already align with many aspects of these frameworks, though implemented in different Frameworks to Generative AI guises through existing risk management policies and frameworks.”18 The frameworks establish protocols Established model risk management frameworks, for identifying, assessing, and mitigating risks, thus such as those outlined by the Supervisory Guidance maintaining operational integrity and regulatory on Model Risk Management (SR 11-7) and the NIST AI compliance in the financial sector. Risk Management Framework, provide a structured approach to assessing and mitigating the risks The principles-based nature of model risk associated with financial models. These frameworks management frameworks allows firms to adapt emphasize robust validation, comprehensive them to new technologies such as generative AI, governance, and ongoing monitoring to ensure the and avoids the need for entirely new regulatory reliability and transparency of financial models.17 frameworks.",
+        "entities": [
+          "model risk management",
+          "generative ai",
+          "supervisory guidance",
+          "nist ai",
+          "financial sector",
+          "risk management framework"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "cba6c47c-1cc4-415e-8f08-9fedb9d53ce3",
+      "properties": {
+        "page_content": "However, the unique complexities Specifically, the NIST AI Risk Management Framework and potential impacts of generative AI may require offers guidance on managing AI risks, including regulatory clarifications to help firms effectively integrating AI governance into existing governance manage the new types of risks introduced by these structures and processes such as privacy and advanced AI systems. security. The recent draft AI Risk Management Framework Generative AI Profile addresses A. Robust Governance and Program Oversight unique risks posed by generative AI but is notably industry-agnostic and therefore not specifically Effective program governance, management, targeted at financial institutions; nevertheless, personnel, and oversight policies and procedures it can serve as a valuable resource.",
+        "entities": [
+          "nist ai risk management framework",
+          "generative ai",
+          "ai governance",
+          "privacy",
+          "advanced ai systems",
+          "ai risk management framework generative ai profile",
+          "robust governance and program oversight"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "fcdada9b-9ae8-4d88-a408-d1732397bd61",
+      "properties": {
+        "page_content": "are core to model risk management. They play a crucial role in shaping and controlling the model The U.S. framework has similar counterparts development process. Regulators should consider around the world. For example, the principles set and amplify the importance of the following forth in the UK's SS1/23 (Supervisory Statement 1/23) considerations and strategies when firms are on model risk management mirror those established establishing these foundational processes: by the U.S. regulatory bodies.",
+        "entities": [
+          "u.s.",
+          "uk",
+          "ss1/23",
+          "supervisory statement 1/23"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "098e4c73-6b21-4854-a866-13dd1ad4eb66",
+      "properties": {
+        "page_content": "SS1/23 mandates similar protocols for model identification, classification, ● Socio-technical Considerations: Managing AI and governance, ensuring that models are clearly risks requires a comprehensive approach that defined, inventoried, and assessed based on risk. integrates both technical and social factors. Additionally, SS1/23 emphasizes the importance of NIST has identified a series of “trustworthiness model testing, ensuring data quality, and verifying characteristics” — including (1) valid and reliable, the appropriateness of models for their intended (2) safe, secure and resilient, (3) accountable and uses—foundational principles for deploying transparent, (4) explainable and interpretable, generative AI technologies effectively and safely. (5) privacy-enhanced, and (6) fair with harmful bias managed.",
+        "entities": [
+          "ss1/23",
+          "nist",
+          "ai",
+          "generative ai"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "d8612a2f-28e9-472e-8396-247012222855",
+      "properties": {
+        "page_content": "According to NIST, “[c]reating Historically, these kinds of model risk management trustworthy AI requires balancing each of these frameworks have been essential in managing characteristics based on the AI system’s context financial model risk by ensuring models are of use. While all characteristics are socio-technical appropriately developed, implemented, and system attributes, accountability and maintained. A recent U.S. Treasury AI Cyber Risk transparency also relate to the processes and Report highlights that “most institutions identified activities internal to an AI system and its external utilizing the Office of the Comptroller of the setting. Neglecting these characteristics can Currency’s Model Risk Management guidance to drive increase the probability and magnitude of their underlying controls related to model risk… their negative consequences.”19 existing 17 See Google Cloud and Alliance for Innovative Regulation (Alliance for Innovative Regulation) 2023, p. 7-8. for a detailed discussion on SR 11-7 model risk management guidance requirements.",
+        "entities": [
+          "nist",
+          "u.s. treasury",
+          "ai cyber risk",
+          "office of the comptroller of the currency",
+          "model risk management",
+          "google cloud",
+          "alliance for innovative regulation"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "be3fd59b-b2c8-42b6-9f03-5f221c5dcc76",
+      "properties": {
+        "page_content": "18 U.S. Department of the Treasury (2024) Managing Artificial Intelligence-Specific Cybersecurity Risks in the Financial Services Sector, p. 45. Available at: https://home.treasury.gov/system/files/136/Managing-Artificial-Intelligence-Specific-Cybersecurity-Risks-In-The-Financial-Services-Sector.pdf (Accessed: September 12, 2024). 19 See National Institute of Standards and Technology (NIST) (2023) Trustworthy & Responsible AI Resource Center: AI Risks and Trustworthiness, National Institute of Standards and Technology (NIST). Available at: 8 https://airc.nist.gov/AI_RMF_Knowledge_Base/AI_RMF/Foundational_Information/3-sec-characteristics (Accessed: October 9, 2024).",
+        "entities": [
+          "u.s. department of the treasury",
+          "artificial intelligence",
+          "financial services sector",
+          "national institute of standards and technology",
+          "nist"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "0ce1ebbc-a637-45d8-937e-6316ec40a8d9",
+      "properties": {
+        "page_content": "Human judgment is needed to determine the ● Model Documentation: With generative AI, it is specific metrics related to AI trustworthiness and even more important that financial institutions set appropriate thresholds. In addition, tradeoffs and model developers and deployers understand often arise between characteristics, and rarely regulators’ documentation expectations for do all apply equally in every setting. For example, all categories of AI risk management. We optimizing privacy may reduce predictive recommend that existing model risk management accuracy, requiring model developers and guidance be enhanced to include discussion of deployers to carefully balance tradeoffs between documentation requirements in the context of these metrics and consider the appropriate advanced AI models, including generative AI.",
+        "entities": [
+          "ai",
+          "model documentation",
+          "financial institutions",
+          "ai trustworthiness",
+          "tradeoffs",
+          "model developers",
+          "model deployers",
+          "regulators",
+          "ai risk management",
+          "generative ai"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "63c9a04a-3435-4b35-b5f5-2d267fb83b57",
+      "properties": {
+        "page_content": "To requirements based on the model’s use case or this end, regulators might consider creating application. Having the right governance teams financial sector use-case-based guidance on and personnel involved at the outset—and proper documentation, including for the context throughout the model development and of third-party developed models. implementation life cycle—continues to be a key component of demonstrating adherence to risk One approach that has gained traction since it management best practices. was introduced in a 2018 Google research paper20 is the use of model cards.",
+        "entities": [
+          "google",
+          "2018"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "e883f500-898b-4dbb-9437-9243cf66a684",
+      "properties": {
+        "page_content": "Model cards provide a ● Data Governance: Generative AI models structured way to present the essential facts of are limited by the recency, source, and machine learning models and have been utilized comprehensiveness of their training data. within the industry. Model cards can take various Enhancing the overall quality and quantity of forms depending on the use case. Given the input data for fine-tuning models is critical rapid evolution of AI technologies, it is crucial for ensuring the robustness and reliability of that model card structures and content remain generative AI models.",
+        "entities": [
+          "model cards",
+          "data governance",
+          "generative ai",
+          "machine learning",
+          "ai technologies"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "64eb197a-2f9c-4e30-8fda-86ff3c5bef77",
+      "properties": {
+        "page_content": "This process includes flexible to accommodate emerging industry how an enterprise conducts data selection and benchmarks for performance and safety. Model cleansing, enriching datasets to cover a broader documentation should be risk-based, protect spectrum of scenarios, and augmenting data intellectual property and security, and should with synthetic examples. not follow a one-size-fits all approach.21 To maximize the accuracy and relevance of AI Sufficiency of documentation should be outputs, it’s important to utilize high-quality, determined by what financial institutions need to current datasets. Accurate and representative use, validate, and understand the model’s design, data reduces the likelihood of hallucinations.",
+        "entities": []
+      },
+      "type": ""
+    },
+    {
+      "id": "991bc0b1-be6a-4782-8e6a-66534157dfd8",
+      "properties": {
+        "page_content": "theory, and logic. Disclosure of proprietary Problems with data quality can be exacerbated details, such as model code, is unnecessary and or become more apparent in generative AI due unhelpful in verifying the sufficiency of a model to the nature of the outputs they produce. and would have the unintended consequence of Implementing comprehensive data management deterring model developers and deployers from practices—such as data cleansing and sharing best-in-class technology with financial validation—can help promote the accuracy and institutions. reliability of input data, which in turn helps mitigate the risks associated with data bias, inaccuracies, and inconsistencies.",
+        "entities": []
+      },
+      "type": ""
+    },
+    {
+      "id": "3d59e099-00df-4576-8713-f4becee34a1d",
+      "properties": {
+        "page_content": "20 Mitchell, M. et al. (2018) Model cards for model reporting, arXiv [cs.LG]. Available at: http://arxiv.org/abs/1810.03993 (Accessed: September 12, 2024). 9 21 Google (no date a) Model cards: The value of a shared understanding of AI models, Google.",
+        "entities": [
+          "mitchell",
+          "arxiv",
+          "google"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "6547bbe1-cef3-4b13-8917-764725964d0e",
+      "properties": {
+        "page_content": "Available at: https://modelcards.withgoogle.com/about (Accessed: September 12, 2024). Although the existing regulatory model risk ● Grounding: Grounding23 is a technique that management guidance22 requiring developing anchors model responses to verified data and maintaining “adequate documentation” that sources, reducing the likelihood of models “explains in detail” the design, theory, and logic generating content that isn’t factual of the model is understandable and expected, (“hallucinating”) and enhancing the few concrete parameters are provided regarding trustworthiness and applicability of the generated what would be deemed appropriate by content. In simple terms, grounding gives a model examiners. Clear regulatory expectations relating a connection to a trusted data source, allowing to documentation sufficiency – including it to access and process information beyond its recognition of industry solutions, such as model initial training data.",
+        "entities": [
+          "grounding23",
+          "september 12, 2024"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "d360487d-2641-47d1-afd6-350195ddd7bc",
+      "properties": {
+        "page_content": "This makes the model more cards – would be helpful to governance teams, reliable, informative, and capable of handling developers, and deployers of AI models. real-world tasks. We propose that regulators recognize grounding techniques, alongside ● Explainability: Explainability is useful for the model evaluation based on outcomes (see below), purposes of understanding specific outcomes as appropriate methods to anchoring on verified of AI/ML models. However, there are two points information.",
+        "entities": [
+          "ai",
+          "ml",
+          "explainability",
+          "governance teams",
+          "developers",
+          "deployers",
+          "regulators",
+          "grounding techniques"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "b352741d-0251-48e2-85c3-fadfad65c242",
+      "properties": {
+        "page_content": "that regulators should bear in mind. First, the ● Model Evaluation: Model evaluation is a critical level of required explainability varies significantly development element that helps organizations across different applications of AI, based on the have a clear understanding of how well generative specific operational context in which it is used. AI models and applications align to their intended A risk-based approach should be used to assess task. Model evaluation often incorporates both the level of explainability needed for a particular quantitative and qualitative assessments.",
+        "entities": [
+          "model evaluation",
+          "ai",
+          "generative ai",
+          "quantitative",
+          "qualitative"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "b1188826-3789-4f25-9525-800b6d921e3e",
+      "properties": {
+        "page_content": "From a application. Second, while explainability is a quantitative standpoint, model evaluations can helpful concept in the context of assessing leverage metrics such as Bilingual Evaluation the suitability of particular outputs, it may be Understudy (BLEU) to measure the similarities insufficient or ineffective to establish whether between machine-generated translation and one the model as a whole is sound and fit for purpose. or more human-written reference translations or For those purposes, it will be important to look Inception Score (IS) to evaluate the quality and to other factors – such as ongoing model testing diversity of generated images. From a qualitative and monitoring programs (see below).",
+        "entities": [
+          "bilingual evaluation understudy",
+          "bleu",
+          "inception score",
+          "is"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "9240093e-2985-47e3-8f0d-57bee99579e7",
+      "properties": {
+        "page_content": "These standpoint, human evaluation is key, often factors should be prioritized, relative to requiring the development of human evaluation explainability, in the MRM assessment process. protocols and the incorporation of domain expertise. In addition, model evaluation suites B. Reliable Model Development, Implementation are increasingly available from technology and Use providers allowing financial institutions to compare evaluation metrics across multiple Model risk management frameworks underscore models to help inform which model should be the importance of robust processes surrounding deployed using visualization tools and/or the development, deployment, and use of generative evaluation metrics and, after deployment, to help AI models.",
+        "entities": [
+          "human evaluation",
+          "mrm assessment",
+          "model evaluation",
+          "reliable model development",
+          "implementation",
+          "financial institutions",
+          "evaluation metrics",
+          "model risk management",
+          "generative evaluation metrics",
+          "ai models"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "38aba331-eab6-4976-b43f-546e5b526365",
+      "properties": {
+        "page_content": "This includes implementing techniques maintain model performance.24 to support the reliability and accuracy of AI outputs. We propose that regulators recognize techniques such as grounding and model evaluation based on outcomes, as being appropriate methods to enhance explainability, accuracy, and transparency of generative AI models. 22 Office of the Comptroller of the Currency (OCC), 2021. 23 Google Cloud (updated 2024) Generative AI on Vertex AI Documentation Guide on Grounding.",
+        "entities": [
+          "office of the comptroller of the currency",
+          "occ",
+          "google cloud",
+          "vertex ai"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "9685bff6-da85-4672-a9e3-1db9203a2946",
+      "properties": {
+        "page_content": "Google Cloud. Available at: https://cloud.google.com/vertex-ai/generative-ai/docs/grounding/overview (Accessed: May 30, 2024). 10 24 Google Cloud (updated 2024) View and interpret evaluation results. Google Cloud.",
+        "entities": [
+          "google cloud"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "1428a600-1e5b-416b-8eb7-006800de5395",
+      "properties": {
+        "page_content": "Available at: https://cloud.google.com/vertex-ai/generative-ai/docs/models/view-evaluation (Accessed: October 1, 2024). C. Model Validation and Ongoing Monitoring The overall risk ranking, taking into account and Testing these various factors, should drive considerations of how and to what extent Existing MRM frameworks underscore the a human-in-the-loop is required to ensure importance of model validation: ensuring the model proper model oversight. is conceptually sound and operates as expected, including through ongoing monitoring and testing ● Implementing Triggers. Once risks are during model use.",
+        "entities": [
+          "google",
+          "vertex ai",
+          "october 1, 2024",
+          "model validation",
+          "mrm",
+          "human-in-the-loop"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "41597b14-b398-43d3-a474-375c800d0f49",
+      "properties": {
+        "page_content": "These concepts remain relevant identified and ranked, technical or operational for generative AI models. We urge regulators to thresholds can be implemented that recognize the following strategies as being necessitate human review, approval, or particularly important to mitigating risk in the context rejection of AI-generated decisions and of generative AI: actions. These controls often include manual review processes, confirmation prompts, or ● Human-in-the-Loop Oversight: To support the the ability to override AI decisions. safe and sound deployment of generative AI in financial services, we recommend that regulators ● Advanced Fairness Metrics: Ensuring that evaluate and confirm the adequacy of controls decisions made by generative AI are transparent, such as continuous monitoring, robust testing equitable, and accountable is crucial.",
+        "entities": [
+          "generative ai",
+          "human-in-the-loop oversight",
+          "advanced fairness metrics",
+          "financial services"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "55cd2e6b-a46e-43c8-976c-b16c9cead54a",
+      "properties": {
+        "page_content": "This involves protocols, and human-in-the-loop oversight. understanding fairness metrics specifically This includes protocols for manual reviews in designed to identify and mitigate unintended high-impact scenarios.25 Processes to support or unwanted biases. Continuous monitoring for effective human intervention can include:26 disparities in model outputs across different groups helps maintain fairness and prevent ● Risk Ranking. Financial institutions can biases that could undermine trust.",
+        "entities": [
+          "protocols",
+          "human-in-the-loop oversight",
+          "fairness metrics",
+          "manual reviews",
+          "unintended high-impact scenarios",
+          "continuous monitoring",
+          "risk ranking",
+          "financial institutions"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "f035f35f-39b2-4fa4-80e0-dd6436eb9e2f",
+      "properties": {
+        "page_content": "Many financial rank the risks of AI use cases based on products are intentionally designed to target agreed-upon criteria such as internal versus specific populations and may involve a level external use, involvement of sensitive data, of statistical bias to provide tailored impact on individuals, whether the application recommendations. This bias must be is mission-critical, and the level of uncertainty well-understood and managed, however, in AI outputs. to monitor that it is not contributing to unfair or discriminatory outcomes. Data and model Importantly, the mere use of generative AI bias metrics help with efforts to evaluate and should not automatically render a model manage biases, ensuring models perform high-risk—rather, that risk should be assessed equitably across different demographics.27 based on the particular application to which ● Safety Filtering: Utilizing safety filtering generative AI is applied.",
+        "entities": [
+          "ai",
+          "data",
+          "generative ai",
+          "bias",
+          "models",
+          "demographics"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "02c6493e-c18f-4361-8d50-09b3d5a03198",
+      "properties": {
+        "page_content": "mechanisms helps prevent the generation of inappropriate or harmful content. Implementing Additionally, how the particular model is built-in content filters and safety attribute scoring developed—whether in-house or through a can help financial institutions detect and mitigate third-party—impacts the risk profile. potential risks associated with generative AI Depending on whether an institution builds its outputs. For example, safety filters can screen own generative AI applications, customizes for offensive or insensitive language, while safety existing models, tailors and integrates attribute scoring can define confidence third-party-made models, or uses third-party thresholds for acceptable outputs based on out-of-the-box solutions, the nature and specific use cases and business contexts.",
+        "entities": [
+          "generative ai",
+          "financial institutions",
+          "safety filters",
+          "third-party",
+          "offensive language"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "b9fb7020-6b39-48e0-a294-320a57558d5b",
+      "properties": {
+        "page_content": "scope of risks will vary. 25 The high-impact scenario approach is in line with the EU AI Act, which emphasizes the importance of human oversight in critical decision-making processes. 26 Chuvakin, A.. and Kaganovich, M. (2024) Generative AI governance: 10 tips to level up your AI program, Google Cloud Blog, 1 February. Available at: https://cloud.google.com/transform/gen-ai-governance-10-tips-to-level-up-your-ai-program.",
+        "entities": [
+          "eu ai act",
+          "chuvakin, a.",
+          "kaganovich, m.",
+          "generative ai governance",
+          "google cloud blog"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "df28f359-df56-48fb-ace1-0e7ceefc0385",
+      "properties": {
+        "page_content": "11 27 Google Cloud (updated 2024) Introduction to model evaluation for fairness. Available at: https://cloud.google.com/vertex-ai/docs/evaluation/intro-evaluation-fairness (Accessed: May 30, 2024). ● Robust Testing & Monitoring: Implementing D. Shared Responsibility in Third-Party continuous testing, validation, and monitoring Risk Management of generative AI outputs against expected results and known data points is crucial to mitigating When a financial institution works with a risks. For instance, overfitting – a subset of model third-party model developer, there are unique quality issues – occurs when a generative AI issues that can arise in applying model risk model over-indexes on details and noise in the management frameworks and techniques.",
+        "entities": [
+          "google cloud",
+          "2024",
+          "may 30, 2024",
+          "d",
+          "ai"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "4fd8b8d3-e242-4853-bc85-6322cb68e0a7",
+      "properties": {
+        "page_content": "In these training data to the detriment of its performance circumstances, it becomes even more important on new data. This could be particularly for all stakeholders to understand their respective problematic in financial modeling, where models roles and expectations. A collaborative approach must perform well across diverse and unforeseen between financial institutions, AI developers and market conditions. Beyond these risks, in the deployers, and regulators is essential for navigating context of generative AI models, robust testing the complexities of generative AI implementation.",
+        "entities": [
+          "financial modeling",
+          "financial institutions",
+          "ai developers",
+          "generative ai models",
+          "generative ai implementation"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "4f6049eb-8aba-46c1-91d0-cda6ba2701fd",
+      "properties": {
+        "page_content": "and monitoring procedures are necessary to Shared responsibility ensures comprehensive detect and mitigate critical issues, such as data risk management, from model development to leakage and adversarial attacks. The following are integration into an application, aligning technological key risk mitigation approaches: advancements with operational and regulatory needs along the AI value chain. ● Penetration testing and red teaming. Incorporating penetration testing and red In addition, when working with a third-party, the teaming to identify vulnerabilities and test the financial institution should consider data portability organization’s incident response can help and interoperability requirements or ensure vendor enhance security measures.",
+        "entities": [
+          "data risk management",
+          "model development",
+          "adversarial attacks",
+          "penetration testing",
+          "red teaming",
+          "third-party",
+          "data portability",
+          "interoperability",
+          "financial institution",
+          "incident response"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "f5acbeee-8d9f-4a44-bf20-afa9ca41182a",
+      "properties": {
+        "page_content": "Stress tests and adherence to international standards such as ISO scenario analyses evaluate model 1994129 to avoid vendor lock-in—with respect to both performance under various conditions. These the model developer and/or any underlying model tests help identify potential weaknesses and infrastructure required to operate the model. As make necessary adjustments to enhance the more data is stored in the cloud and enables the use model's accuracy, reliability and security. of generative AI, interoperability is a critical factor in Implementing systems to continuously track ensuring financial institutions can facilitate data model performance and detect deviations porting and working across a multi-cloud ecosystem.",
+        "entities": [
+          "iso",
+          "1994129",
+          "generative ai",
+          "financial institutions",
+          "multi-cloud ecosystem"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "edac82a3-e301-438f-a2b3-4ca033054c10",
+      "properties": {
+        "page_content": "from benchmarks is essential. For example, Data portability and interoperability are central to anomaly detection systems can help spot innovation and help to boost competition; without it unusual predictions that might suggest the customers may face higher prices, less security, and model is drawing conclusions based on less innovation in their cloud and AI services due to spurious relationships rather than valid limited cloud choices. insights.28 ● Automated systems. Automated systems can adjust models promptly when performance deviates from expected or acceptable outcomes.",
+        "entities": [
+          "data portability",
+          "interoperability",
+          "anomaly detection systems",
+          "cloud",
+          "ai services"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "77d36574-0006-4fc6-8ea5-2dc397f70073",
+      "properties": {
+        "page_content": "This includes adapting and retraining models as new data becomes available and market conditions evolve. Automated monitoring systems can provide real-time alerts when model performance deviates from benchmarks, prompting immediate reviews and adjustments. 28 Evaluate model and system for safety (updated 2024) Google AI for Developers. Available at: https://ai.google.dev/responsible/docs/evaluation (Accessed: October 1, 2024).",
+        "entities": [
+          "google ai",
+          "2024",
+          "https://ai.google.dev/responsible/docs/evaluation",
+          "october 1, 2024"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "b99a6041-a73e-4dca-b2be-c7470fea8e27",
+      "properties": {
+        "page_content": "12 29 ISO (2017) ISO/IEC 19941:2017. Available at: https://www.iso.org/standard/66639.html (Accessed: October 1, 2024). III. Conclusion The integration of generative AI into the financial services sector presents a transformative opportunity to enhance operational efficiencies, customer engagement, and overall decision-making capabilities.",
+        "entities": [
+          "iso",
+          "iso/iec 19941:2017",
+          "october 1, 2024",
+          "generative ai",
+          "financial services"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "3e70ecba-2719-4221-a3e9-5fbe26a51402",
+      "properties": {
+        "page_content": "As with any technology, this is not without its risks and challenges, necessitating a robust and dynamic approach to model risk management. Existing frameworks are robust yet sufficiently flexible to meet the innovative demands of generative AI, and can be fine-tuned to effectively manage specific risks within financial institutions. The adaptability of existing model risk management frameworks to these new technologies mitigates the need to create entirely new regulatory structures. Accordingly, the focus should be on optimizing, clarifying and adapting these established frameworks to ensure comprehensive risk evaluations.",
+        "entities": [
+          "generative ai",
+          "financial institutions",
+          "model risk management",
+          "regulatory structures"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "f790b7fd-205b-40a1-b59f-3190aad4b3d2",
+      "properties": {
+        "page_content": "This includes incorporating thorough assessments to maintain operations within accepted boundaries and standards. These standards and guidelines will only be achieved through collaboration between industry participants, regulators and governmental bodies. While the path forward involves navigating complex regulatory and ethical landscapes, the collective commitment to responsible innovation and adherence to robust model risk management practices will be pivotal in realizing the full potential of generative AI in financial services and beyond. Looking forward, the discourse on generative AI in financial services will continue to evolve.",
+        "entities": [
+          "generative ai",
+          "financial services"
+        ]
+      },
+      "type": ""
+    },
+    {
+      "id": "b602f507-2282-463b-8ad1-c96a37975498",
+      "properties": {
+        "page_content": "We will continue to examine external risks associated with generative AI, including systemic and operational challenges, and the integration of these technologies into global financial systems. 13",
+        "entities": [
+          "generative ai",
+          "global financial systems"
+        ]
+      },
+      "type": ""
+    }
+  ],
+  "relationships": [
+    {
+      "id": "ca6abce0-b456-4c87-8bef-75d70734814f",
+      "type": "entity_jaccard_similarity",
+      "source": "41597b14-b398-43d3-a474-375c800d0f49",
+      "target": "f790b7fd-205b-40a1-b59f-3190aad4b3d2",
+      "bidirectional": true,
+      "properties": {
+        "entity_jaccard_similarity": 0.5
+      }
+    },
+    {
+      "id": "18a5ab05-2a80-414d-bd9b-b23cadbfc725",
+      "type": "entity_jaccard_similarity",
+      "source": "b99a6041-a73e-4dca-b2be-c7470fea8e27",
+      "target": "f790b7fd-205b-40a1-b59f-3190aad4b3d2",
+      "bidirectional": true,
+      "properties": {
+        "entity_jaccard_similarity": 0.4
+      }
+    },
+    {
+      "id": "56c349a8-fdb4-4dc3-99f7-c6f24e3cb1ea",
+      "type": "entity_jaccard_similarity",
+      "source": "e602198c-ae69-4a5a-b865-931ac209cdd5",
+      "target": "3e70ecba-2719-4221-a3e9-5fbe26a51402",
+      "bidirectional": true,
+      "properties": {
+        "entity_jaccard_similarity": 0.5
+      }
+    },
+    {
+      "id": "29a78e22-5cb6-4ae4-8077-dcedc3d6d16d",
+      "type": "entity_jaccard_similarity",
+      "source": "873486da-0a5f-4f8a-a55f-bf1e0fac2f4d",
+      "target": "f790b7fd-205b-40a1-b59f-3190aad4b3d2",
+      "bidirectional": true,
+      "properties": {
+        "entity_jaccard_similarity": 0.5
+      }
+    },
+    {
+      "id": "9fc03cd8-0271-47bb-8300-5ea6c5e288a6",
+      "type": "entity_jaccard_similarity",
+      "source": "6b8d37e7-6678-4f6c-b097-ce840eda68a9",
+      "target": "f790b7fd-205b-40a1-b59f-3190aad4b3d2",
+      "bidirectional": true,
+      "properties": {
+        "entity_jaccard_similarity": 0.5
+      }
+    },
+    {
+      "id": "fff1706f-145e-4067-91e8-0dbe114f6a02",
+      "type": "entity_jaccard_similarity",
+      "source": "536129e2-a710-4c59-8491-09c46ffd944e",
+      "target": "778beb47-a590-4e46-a6ef-0bb4b86f4809",
+      "bidirectional": true,
+      "properties": {
+        "entity_jaccard_similarity": 0.4
+      }
+    },
+    {
+      "id": "b7876a3b-2acc-402f-a915-56fa9fb2aaae",
+      "type": "entity_jaccard_similarity",
+      "source": "778beb47-a590-4e46-a6ef-0bb4b86f4809",
+      "target": "3e70ecba-2719-4221-a3e9-5fbe26a51402",
+      "bidirectional": true,
+      "properties": {
+        "entity_jaccard_similarity": 0.4
+      }
+    }
+  ]
+}
