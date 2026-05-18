@@ -12,6 +12,7 @@ dependencies = [
     "langchain-core>=1.2.7",
     "langchain-google-genai>=4.2.0",
     "langchain-huggingface>=1.2.0",
+    "litellm>=1.85.0",
     "nltk>=3.9.4",
     "pdfplumber>=0.11.9",
     "psycopg>=3.3.2",
